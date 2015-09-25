@@ -312,6 +312,7 @@ p {
 
 .thumbnail > img {
     border: 1px solid #083d5f;
+    max-width: 3.5cm;
 }
 
 
@@ -437,8 +438,7 @@ p {
     padding-top:15px;
 }
 .service p {
-    padding:0px 50px;
-    height:60px;
+    padding:0px 25px;
 }
 .service img {
     width:150px;
@@ -871,6 +871,7 @@ input[type="radio"] {
     color:#083d5f;
     position:relative;
     margin-top:-25px;
+    margin-bottom: 30px;
     padding:20px;
 }
 .contact-form h3 {

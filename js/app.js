@@ -56,20 +56,45 @@ jQuery(document).ready(function ($) {
         });
     });
 
+    $('#fin_services').on('shown.bs.collapse', function () {
+        $("#collapseF").removeClass("icon-angle-down").addClass("icon-angle-up");
+    });
+
+    $('#fin_services').on('hidden.bs.collapse', function () {
+       $("#collapseF").removeClass("icon-angle-up").addClass("icon-angle-down");
+    });
+
+    $('#con_services').on('shown.bs.collapse', function () {
+        $("#collapseC").removeClass("icon-angle-down").addClass("icon-angle-up");
+    });
+
+    $('#con_services').on('hidden.bs.collapse', function () {
+       $("#collapseC").removeClass("icon-angle-up").addClass("icon-angle-down");
+    });
+
+    $('#nri_services').on('shown.bs.collapse', function () {
+        $("#collapseN").removeClass("icon-angle-down").addClass("icon-angle-up");
+    });
+
+    $('#nri_services').on('hidden.bs.collapse', function () {
+       $("#collapseN").removeClass("icon-angle-up").addClass("icon-angle-down");
+    });
+
+
     $(function() {
         $( "#cstart" ).datepicker({
-        changeMonth: true,
-        changeYear: true,
-        dateFormat: "d MM, yy"
-        });
+            changeMonth: true,
+            changeYear: true,
+            dateFormat: "d MM, yy"
+        }).datepicker('setDate', new Date());
     });
 
     $(function() {
         $( "#cend" ).datepicker({
-        changeMonth: true,
-        changeYear: true,
-        dateFormat: "d MM, yy"
-        });
+            changeMonth: true,
+            changeYear: true,
+            dateFormat: "d MM, yy"
+        }).datepicker('setDate', new Date());
     });
 
 
@@ -537,18 +562,18 @@ Sand mail
                 data: dataString,
                 timeout: 6000,
                 error: function (request, error) {
-
+                    $('#errorSend').show();
                 },
                 success: function (response) {
-                    response = $.parseJSON(response);
-                    if (response.success) {
+                    // response = $.parseJSON(response);
+                    // if (response.success) {
                         $('#successSend').show();
                         $("#name").val('');
                         $("#email").val('');
                         $("#comment").val('');
-                    } else {
-                        $('#errorSend').show();
-                    }
+                    // } else {
+                    //     $('#errorSend').show();
+                    // }
                 }
             });
             return false;

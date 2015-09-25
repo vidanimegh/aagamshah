@@ -5,7 +5,7 @@
     position: relative;
     margin:0 auto;
     overflow: hidden;
-/*    background: transparent url(../images/Slider.png) repeat-x 0% center; /* Replace with your background image*/*/
+    /*background: transparent url(../images/banner.png) repeat-x 0% center; /* Replace with your background image*/*/
     background-size:auto 100%;
     -webkit-transition: background-position 1s ease-out 0.3s;
     -moz-transition: background-position 1s ease-out 0.3s;
@@ -43,6 +43,42 @@
     left: 0px;
     text-align: left;
 }
+
+.da-slide .quote {
+font-family: Georgia, serif;
+font-size: 33px;
+font-style: italic;
+width: 60%;
+margin: 0.25em 0;
+padding: 0.35em 40px;
+white-space: inherit;
+line-height: 1.45;
+text-transform: none;
+color: #083d5f;
+}
+
+.da-slide .quote:before {
+display: block;
+padding-left: 10px;
+content: "\201C";
+font-size: 80px;
+left: -20px;
+top: -20px;
+position: absolute;
+color: #083d5f;
+}
+
+.da-slide .quote:after {
+display: block;
+padding-right: 10px;
+content: "\201E";
+font-size: 80px;
+right: -20px;
+bottom: -20px;
+position: absolute;
+color: #083d5f;
+}
+
 .da-slide-current {
     z-index: 900;
 }
@@ -78,7 +114,7 @@
 .da-slide h4{
     color: #81b84d;
     text-transform:uppercase;
-      white-space: nowrap;
+    white-space: nowrap;
     z-index: 10;
 }
 .da-slide h2 {
@@ -1271,6 +1307,19 @@
         font-size: 28px;
          top:40px;
     }
+
+    .da-slide .quote {
+        font-size: 28px;
+        top:40px;
+    }
+
+    .da-slide .quote:before {
+        font-size: 60px;
+    }
+
+    .da-slide .quote:after {
+        font-size: 60px;
+    }
     
      .da-slide h4 {
         font-size: 18px;
@@ -1299,6 +1348,19 @@
         font-size: 20px;
         top:40px;
     }
+
+    .da-slide .quote {
+        font-size: 20px;
+        top: 40px;
+    }
+
+    .da-slide .quote:before {
+        font-size: 50px;
+    }
+
+    .da-slide .quote:after {
+        font-size: 50px;
+    }
     
      .da-slide h4 {
         font-size: 16px;
@@ -1324,6 +1386,20 @@
         font-size: 16px;
         top:30px;
     }
+
+    .da-slide .quote {
+        font-size: 16px;
+        top:30px;
+    }
+
+    .da-slide .quote:before {
+        font-size: 40px;
+    }
+
+    .da-slide .quote:after {
+        font-size: 40px;
+    }
+
     .da-slide h4{
         font-size: 14px;
         top: 70px;
